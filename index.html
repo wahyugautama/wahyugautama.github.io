@@ -1,11 +1,11 @@
-</html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
-
-    <link rel="stylesheet" href="tailwind.css">
-  <title>Wahyu Gautama</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahyu Gautama</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
+    <link rel="stylesheet" href="style/tailwind.css">
 </head>
 <body class="bg-black lg:px-20 md:px-12 px-6 mx-auto text-gray-50" >
 
@@ -16,131 +16,137 @@
   </div> 
 
 <!-- Navigation -->
-<nav class="bg-black fixed inset-x-0 lg:px-20 md:px-12 px-6 h-12 flex justify-between items-center py-4 md:py-10">
+<nav class="bg-black fixed inset-x-0 lg:px-20 md:px-12 px-6 h-16 flex justify-between items-center py-4 md:py-10">
     <a href="index.html">wahyu gautama</a>
+
 <!-- Floating Menu Button -->
-<div onclick="menu('menu')" class="md:hidden floating-menu inline-flex items-center cursor-pointer">
+<div class="md:hidden mobile-menu-button floating-menu inline-flex items-center cursor-pointer">
     <svg class="w-6 h-6 mr-1 pt-1 fill-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
       </svg>
       <h1>menu</h1>
 </div>
+
 <!-- Menu -->
 <div class="hidden  md:flex lg:space-x-10 md:space-x-8 space-x-6">
-    <a href="">work</a>
+    <a href="#project">work</a>
     <a href="info.html">info</a>
-    <a href="">playground</a>
-    <a href="">blog</a>
+    <a href="playground.html">playground</a>
+    <a href="blog.html">blog</a>
 </div>
-
 </nav>
 
-<!-- Menu -->
-<div id="menu" class="hidden fixed inset-0 mt-11 p-6 bg-black flex-col justify-between">
-    <div class="flex font-light flex-col text-4xl space-y-4">
-    <a href="#project">work</a>
-    <a href="">info</a>
-    <a href="">playground</a>
-    <a href="">blog</a>
-</div>
-<div class="flex flex-col space-y-1 font-light">
-    <a href="">info@designedbywahyu.com</a>
-    <a href="">+62 878-6197-1759</a>
-</div>
+<!-- Mobile Menu -->
+<div class="mobile-menu hidden md:hidden fixed inset-0 mt-16 p-6 bg-indigo-600">
+    <div class="flex h-full flex-col justify-between">
+         <div class="flex font-light flex-col text-4xl space-y-4">
+            <a href="#project">work</a>
+            <a href="info.html">info</a>
+            <a href="playground.html">playground</a>
+            <a href="blog.html">blog</a>
+        </div>
+        <div class="flex flex-col space-y-1 font-light">
+            <a href="">info@designedbywahyu.com</a>
+            <a href="">+62 878-6197-1759</a>
+        </div> 
+    </div>
 </div>
 
 <!-- Hero -->
-<div class="md:w-3/4 flex flex-col justify-between lg:py-48 py-32">
+<div class="md:w-3/4 flex flex-col h-screen justify-between py-8">
+    <div class="bg-black w-4 h-4"></div>
     <div>
         <h1 class="mb-4 md:text-5xl text-2xl">Designing websites / apps for companies like yours.</h1>
         <p class="mb-8 text-gray-300">If you’re looking for a freelance designer to help bring an idea to life and you’re on a tight timeline—let’s jam.</p>
         <button class="text-gray-900 mr-6 bg-gray-50 px-6 py-3 rounded-full hover:bg-black hover:text-gray-50 transition ease-out">hey@designedbywahyu.com</button>
     </div>    
+    <div class="tracking-wide text-sm items-center inline-flex text-gray-100 py-2">
+        <svg class="mr-1 fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        Selected work</div>
 </div>
 
-<div class="uppercase tracking-wide text-sm inline-block text-gray-100 border-b border-gray-100 py-2">Selected work</div>
+
 
 <!-- Project Grid -->
-<div id="project" class="py-20 grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-24">
+<div id="project" class="py-10 grid grid-cols-1 md:grid-cols-2 gap-x-20 md:gap-y-24 gap-y-16">
 
-    <!-- Project Card -->
-    <div>
-        <div class="flex items-center">
-            <div class="bg-cover   w-12 h-12 mr-4 bg-gray-600 rounded-full" style="background-image:url(img/bump-logo.png)"></div>
-            <div>
-                <h1>Bump Coffee</h1>
-            <a href="https://www.invisionapp.com" target="_blank" class="text-sm hover:text-blue-400 text-gray-400">drinkbumpcoffee.com</a>
-        </div>
-        </div>
-        <div class="bg-cover bg-center my-6 rounded-sm h-80" style="background-image:url(img/bump-thumbnail.png)"></div>
-        <h1 class="text-blue-400 mb-3">branding, web design</h1>
-        <h1 class="text-xl tracking-wide">At Bump we believe there is a simpler way to present better tasting coffee to the world.</h1>
-    </div>
-
-    <!-- Project Card -->
-    <div>
-        <div class="flex items-center">
-            <div class="w-12 h-12 mr-4 bg-gray-600 rounded-full"></div>
-            <h1>InVision</h1>
-        </div>
-        <div class="my-6 rounded-sm bg-gray-700 h-80"></div>
-        <h1 class="text-blue-400 mb-3">photography, web design</h1>
-        <h1 class="text-xl tracking-wide">Official demo app and teaser for InVision’s new design tool—Studio</h1>
-    </div>
-
-    <!-- Project Card -->
-    <div>
+     <!-- Project Card -->
+     <div class="space-y-6">
         <div class="flex items-center">
             <div class="bg-cover w-12 h-12 mr-4 bg-gray-600 rounded-full" style="background-image:url(img/immi-logo.png)"></div>
             <div>
                 <h1>immi eats</h1>
                 <a href="https://www.immieats.com" target="_blank" class="text-sm hover:text-blue-400 text-gray-400">www.immieats.com</a></div>
         </div>
-        <div class="bg-cover my-6 rounded-sm bg-gray-700 h-80" style="background-image:url(img/immi-thumbnail.png)"></div>
-        <h1 class="text-blue-400 mb-3">web design</h1>
-        <h1 class="text-xl tracking-wide">Surprisingly healthy instant ramen</h1>
-    </div>
-
-     <!-- Project Card -->
-     <div>
-        <div class="flex items-center">
-            <div class="bg-cover   w-12 h-12 mr-4 bg-gray-600 rounded-full" style="background-image:url(img/immi-logo.png)"></div>
-            <div>
-                <h1>immi eats</h1>
-                <a href="https://www.immieats.com" target="_blank" class="text-sm hover:text-blue-400 text-gray-400">www.immieats.com</a></div>
-        </div>
-        <div class="bg-cover my-6 rounded-sm bg-gray-700 h-80" style="background-image:url(img/immi-thumbnail.png)"></div>
-        <h1 class="text-blue-400 mb-3">web design</h1>
-        <h1 class="text-xl tracking-wide">Surprisingly healthy instant ramen</h1>
-    </div>
-
-     <!-- Project Card -->
-     <div>
-        <div class="flex items-center">
-            <div class="bg-cover   w-12 h-12 mr-4 bg-gray-600 rounded-full" style="background-image:url(img/immi-logo.png)"></div>
-            <div>
-                <h1>immi eats</h1>
-                <a href="https://www.immieats.com" target="_blank" class="text-sm hover:text-blue-400 text-gray-400">www.immieats.com</a></div>
-        </div>
-        <div class="bg-cover my-6 rounded-sm bg-gray-700 h-80" style="background-image:url(img/immi-thumbnail.png)"></div>
-        <h1 class="text-blue-400 mb-3">web design</h1>
-        <h1 class="text-xl tracking-wide">Surprisingly healthy instant ramen</h1>
+        <div class="bg-cover rounded-sm bg-gray-700 h-80" style="background-image:url(img/immi-thumbnail.png)"></div>
+        <div><h1 class="mb-2 text-blue-400">web design</h1>
+        <h1 class="text-xl tracking-wide">Surprisingly healthy instant ramen</h1></div>
     </div>
 
     <!-- Project Card -->
-    <div>
+    <div class="space-y-6">
         <div class="flex items-center">
-            <div class="bg-cover w-12 h-12 mr-4 bg-gray-600 rounded-full" style="background-image:url(https://dann.thatportfolio.com/wp-content/uploads/sites/57/2020/05/App-Icon.png)"></div>
-            <h1>Fever Free</h1>
+            <div class="bg-cover w-12 h-12 mr-4 bg-gray-600 rounded-full" style="background-image:url(img/immi-logo.png)"></div>
+            <div>
+                <h1>immi eats</h1>
+                <a href="https://www.immieats.com" target="_blank" class="text-sm hover:text-blue-400 text-gray-400">www.immieats.com</a></div>
         </div>
-        <div class="my-6 rounded-sm bg-gray-700 h-80"></div>
-        <h1 class="text-blue-400 mb-3">iPhone app design</h1>
-        <h1 class="text-xl tracking-wide">Fever Free iPhone App – Helping to track fevers from COVID-19</h1>
+        <div class="bg-cover rounded-sm bg-gray-700 h-80" style="background-image:url(img/immi-thumbnail.png)"></div>
+        <div><h1 class="mb-2 text-blue-400">web design</h1>
+        <h1 class="text-xl tracking-wide">Surprisingly healthy instant ramen</h1></div>
+    </div>
+    <!-- Project Card -->
+    <div class="space-y-6">
+        <div class="flex items-center">
+            <div class="bg-cover w-12 h-12 mr-4 bg-gray-600 rounded-full" style="background-image:url(img/immi-logo.png)"></div>
+            <div>
+                <h1>immi eats</h1>
+                <a href="https://www.immieats.com" target="_blank" class="text-sm hover:text-blue-400 text-gray-400">www.immieats.com</a></div>
+        </div>
+        <div class="bg-cover rounded-sm bg-gray-700 h-80" style="background-image:url(img/immi-thumbnail.png)"></div>
+        <div><h1 class="mb-2 text-blue-400">web design</h1>
+        <h1 class="text-xl tracking-wide">Surprisingly healthy instant ramen</h1></div>
+    </div>
+    <!-- Project Card -->
+    <div class="space-y-6">
+        <div class="flex items-center">
+            <div class="bg-cover w-12 h-12 mr-4 bg-gray-600 rounded-full" style="background-image:url(img/immi-logo.png)"></div>
+            <div>
+                <h1>immi eats</h1>
+                <a href="https://www.immieats.com" target="_blank" class="text-sm hover:text-blue-400 text-gray-400">www.immieats.com</a></div>
+        </div>
+        <div class="bg-cover rounded-sm bg-gray-700 h-80" style="background-image:url(img/immi-thumbnail.png)"></div>
+        <div><h1 class="mb-2 text-blue-400">web design</h1>
+        <h1 class="text-xl tracking-wide">Surprisingly healthy instant ramen</h1></div>
+    </div>
+    <!-- Project Card -->
+    <div class="space-y-6">
+        <div class="flex items-center">
+            <div class="bg-cover w-12 h-12 mr-4 bg-gray-600 rounded-full" style="background-image:url(img/immi-logo.png)"></div>
+            <div>
+                <h1>immi eats</h1>
+                <a href="https://www.immieats.com" target="_blank" class="text-sm hover:text-blue-400 text-gray-400">www.immieats.com</a></div>
+        </div>
+        <div class="bg-cover rounded-sm bg-gray-700 h-80" style="background-image:url(img/immi-thumbnail.png)"></div>
+        <div><h1 class="mb-2 text-blue-400">web design</h1>
+        <h1 class="text-xl tracking-wide">Surprisingly healthy instant ramen</h1></div>
+    </div>
+    <!-- Project Card -->
+    <div class="space-y-6">
+        <div class="flex items-center">
+            <div class="bg-cover w-12 h-12 mr-4 bg-gray-600 rounded-full" style="background-image:url(img/immi-logo.png)"></div>
+            <div>
+                <h1>immi eats</h1>
+                <a href="https://www.immieats.com" target="_blank" class="text-sm hover:text-blue-400 text-gray-400">www.immieats.com</a></div>
+        </div>
+        <div class="bg-cover rounded-sm bg-gray-700 h-80" style="background-image:url(img/immi-thumbnail.png)"></div>
+        <div><h1 class="mb-2 text-blue-400">web design</h1>
+        <h1 class="text-xl tracking-wide">Surprisingly healthy instant ramen</h1></div>
     </div>
 
   </div>
-
-
 
 <!-- Footer -->
 <div class="flex rounded-sm md:p-16 p-4 bg-opacity-5 bg-gray-50 flex-col lg:my-16 my-4">
@@ -152,34 +158,34 @@
     </div>
     </div>
 
+<!-- JS -->
 <script type="text/javascript">
-        function menu(id) {
-           var e = document.getElementById(id);
-           if(e.style.display == 'flex')
-              e.style.display = 'none';
-           else
-              e.style.display = 'flex';
-        }
-    
+
+    /* Toggle Mobile Menu */ 
+    const btn = document.querySelector(".mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+    btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    });
+
+    /* Current Local Time */
     var d = new Date();
     var n = d.toLocaleTimeString('fil');
     document.getElementById("date").innerHTML = n;
+
 </script>
-  
-  <script>
-document.onreadystatechange = function() { 
+
+<script>
+    /* Loader */
+    document.onreadystatechange = function() { 
     if (document.readyState !== "complete") { 
-        document.querySelector( 
-          "body").style.visibility = "hidden"; 
-        document.querySelector( 
-          "#loader").style.visibility = "visible"; 
-    } else { 
-        document.querySelector( 
-          "#loader").style.display = "none"; 
-        document.querySelector( 
-          "body").style.visibility = "visible"; 
-    } 
-};
+        document.querySelector("body").style.visibility = "hidden"; 
+        document.querySelector("#loader").style.visibility = "visible"; 
+        } else { 
+        document.querySelector("#loader").style.display = "none"; 
+        document.querySelector("body").style.visibility = "visible"; 
+        } 
+    };
 
 </script>
 
