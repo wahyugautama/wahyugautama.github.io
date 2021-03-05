@@ -2,16 +2,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/jpg" href="/dev.png"/>
+      <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
+
     <link rel="stylesheet" href="tailwind.css">
-   <link rel="stylesheet" href="dist/magic-mouse.css" />
   <title>Wahyu Gautama</title>
 </head>
 <body class="bg-black lg:px-20 md:px-12 px-6 mx-auto text-gray-50" >
 
-
-
-
+<!-- Loader -->
+<div id="loader" class="bg-black absolute inset-0 z-20 w-screen h-screen flex items-center justify-center">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_Gh0AU0.json"  background="transparent"  speed="1" class="w-40 h-40"  loop  autoplay></lottie-player>
+  </div> 
 
 <!-- Navigation -->
 <nav class="bg-black fixed inset-x-0 lg:px-20 md:px-12 px-6 h-12 flex justify-between items-center py-4 md:py-10">
@@ -48,7 +50,7 @@
 </div>
 
 <!-- Hero -->
-<div class="md:w-3/4 flex flex-col justify-between lg:py-48 md:py-32 py-16">
+<div class="md:w-3/4 flex flex-col justify-between lg:py-48 py-32">
     <div>
         <h1 class="mb-4 md:text-5xl text-2xl">Designing websites / apps for companies like yours.</h1>
         <p class="mb-8 text-gray-300">If you’re looking for a freelance designer to help bring an idea to life and you’re on a tight timeline—let’s jam.</p>
@@ -150,20 +152,6 @@
     </div>
     </div>
 
-<script type="text/javascript" src="dist/magic_mouse.js"></script>
-
-<script type="text/javascript">
-    options = {
-    "cursorOuter": "basic-circle",
-    "hoverEffect": "circle-move",
-    "hoverItemMove": false,
-    "defaultCursor": false,
-    "outerWidth": 30,
-    "outerHeight": 30
-      };
-    magicMouse(options);
-</script>
-
 <script type="text/javascript">
         function menu(id) {
            var e = document.getElementById(id);
@@ -176,6 +164,23 @@
     var d = new Date();
     var n = d.toLocaleTimeString('fil');
     document.getElementById("date").innerHTML = n;
+</script>
+  
+  <script>
+document.onreadystatechange = function() { 
+    if (document.readyState !== "complete") { 
+        document.querySelector( 
+          "body").style.visibility = "hidden"; 
+        document.querySelector( 
+          "#loader").style.visibility = "visible"; 
+    } else { 
+        document.querySelector( 
+          "#loader").style.display = "none"; 
+        document.querySelector( 
+          "body").style.visibility = "visible"; 
+    } 
+};
+
 </script>
 
 </body>
