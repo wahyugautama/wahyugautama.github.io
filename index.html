@@ -9,6 +9,7 @@
 </head>
 <body class="bg-gray-900 lg:px-20 md:px-12 px-6 mx-auto text-gray-50" >
 
+
 <!-- Loader -->
 <div id="loader" class="bg-gray-900 absolute inset-0 z-20 w-screen h-screen flex items-center justify-center">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -31,18 +32,18 @@
 <div class="hidden md:flex lg:space-x-10 md:space-x-8 space-x-6">
     <a href="#project">work</a>
     <a href="info.html">info</a>
-    <a href="demo.html">demo</a>
+    <a href="demo.html">playground</a>
     <a href="blog.html">blog</a>
 </div>
 </nav>
 
 <!-- Mobile Menu -->
-<div class="mobile-menu md:hidden h-screen flex justify-between flex-col z-20 fixed inset-x-0  p-6 bg-gray-900">
+<div class="mobile-menu md:hidden h-screen flex justify-around flex-col z-20 fixed inset-x-0  p-6 bg-gray-900">
     <div class="w-1 h-1"></div>     
     <div class="link flex font-light flex-col text-4xl space-y-4">
             <a href="#project">work</a>
             <a href="info.html">info</a>
-            <a href="demo.html">demo</a>
+            <a href="demo.html">playground</a>
             <a href="blog.html">blog</a>
         </div>
         <div class="link flex flex-col space-y-1 font-light">
@@ -68,10 +69,10 @@
 
 
 <!-- Project Grid -->
-<div id="project" class=" relative z-10 project py-10 grid grid-cols-1 md:grid-cols-2 gap-x-20 md:gap-y-24 gap-y-16">
+<div id="project" class=" project bg-gray-900 relative z-10 project py-10 grid grid-cols-1 md:grid-cols-2 gap-x-20 md:gap-y-24 gap-y-16">
 
  <!-- Project Card -->
- <div class=" project-card  space-y-6">
+ <div class=" project-card  pt-4 space-y-6">
     <div class="flex items-center">
         <div class="bg-cover w-12 h-12 mr-4 bg-gray-600 rounded-full" style="background-image:url(img/immi-logo.png)"></div>
         <div>
@@ -84,7 +85,7 @@
 </div>
 
  <!-- Project Card -->
- <div class="project-card space-y-6">
+ <div class="project-card pt-4 space-y-6">
     <div class="flex items-center">
         <div class="bg-cover w-12 h-12 mr-4 bg-gray-600 rounded-full" style="background-image:url(img/immi-logo.png)"></div>
         <div>
@@ -98,7 +99,7 @@
 
 
      <!-- Project Card -->
-     <div class="project-card space-y-6">
+     <div class="project-card pt-4 space-y-6">
         <div class="flex items-center">
             <div class="bg-cover w-12 h-12 mr-4 bg-gray-600 rounded-full" style="background-image:url(img/immi-logo.png)"></div>
             <div>
@@ -111,7 +112,7 @@
     </div>
 
     <!-- Project Card -->
-    <div class="project-card space-y-6">
+    <div class="project-card pt-4 space-y-6">
         <div class="flex items-center">
             <div class="bg-cover w-12 h-12 mr-4 bg-gray-600 rounded-full" style="background-image:url(img/immi-logo.png)"></div>
             <div>
@@ -124,7 +125,7 @@
     </div>
    
     <!-- Project Card -->
-    <div class="project-card space-y-6">
+    <div class="project-card pt-4 space-y-6">
         <div class="flex items-center">
             <div class="bg-cover w-12 h-12 mr-4 bg-gray-600 rounded-full" style="background-image:url(img/immi-logo.png)"></div>
             <div>
@@ -137,12 +138,11 @@
     </div>
 
   </div>
-
 <!-- CTA -->
 <div class=" bg-gray-800 bg-gradient-to-r from-gray-800 to-gray-900 rounded-md md:p-16 p-6 lg:my-16 my-4">
     <h1 class="mb-4 md:text-5xl font-light text-2xl pr-20">Available for freelance project</h1>
     <p class="lg:mb-10 mb-8 text-gray-300 lg:pr-60">If you’re looking for a freelance designer to help bring an idea to life and you’re on a tight timeline—let’s jam.</p>        
-    <button class="rounded-full inline-block text-gray-50 bg-blue-500 px-6 py-3 hover:bg-blue-400 transition ease-out">hey@designedbywahyu.com</button>   
+    <button class="rounded-full md:max-w-max w-full text-gray-50 bg-blue-500 px-6 py-3 hover:bg-blue-400 transition ease-out">hey@designedbywahyu.com</button>   
 </div>
 
 <div class="text-gray-600 pb-8 pt-4 md:py-16 flex justify-center">
@@ -158,7 +158,6 @@ Stay safe
 <script type="text/javascript">
 
 document.querySelector("#play").addEventListener("click", animateIt);
-
 //Hero Scroll Animation
 
 gsap.to(".hero", {
@@ -168,7 +167,7 @@ gsap.to(".hero", {
     start: "top bottom",
     end: "top 100px",
     scrub: true
-  }, // start the animation when ".box" enters the viewport (once)
+  }, 
   y: -120,
   opacity:0,
 
@@ -180,8 +179,10 @@ gsap.to(".hero", {
   ScrollTrigger.batch(".project-card",{
     //markers:true,
     start: "top bottom",
-    onEnter: batch => gsap.from(batch,{opacity:0, y:200, scale:0.8, duration:0.8, stagger:0.1}),
-    onEnterBack: batch => gsap.from(batch,{opacity:0, y:-200, scale:0.8, duration:0.8, stagger:0.1}),});
+    end:"center center",
+    onEnter: batch => gsap.from(batch,{y:80, duration: 0.5, stagger:0.2})
+    //onEnterBack: batch => gsap.to(batch,{y:-100, duration: 0.8, stagger:0.2})
+});
 
 
 const tl = gsap.timeline();
@@ -190,7 +191,7 @@ tl.from(".mobile-menu", {
   y: -1000,
   opacity:0,
   duration:0.5,
-  ease:"power3.inOut"
+  ease:"expo.inOut"
 },);
 
 
@@ -227,6 +228,4 @@ function animateIt() {
 </script>
 
 </body>
-</html>
-
 </html>
