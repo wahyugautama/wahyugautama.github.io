@@ -7,190 +7,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo</title>
 </head>
-<body class="mx-auto">
-
-    <!-- Nav -->
-    <nav style="background-color: #27282C;" class="border-b text-gray-400 border-gray-700 font-light">
-        <div class="max-w-6xl flex justify-between items-center px-6 py-3 md:py-4 md:px-10 mx-auto">
-            <h1>Kotlin</h1>
-            <div class="hidden md:flex space-x-8 ">
-                <a href="index.html">Work</a>
-                <a href="">Info</a>
-                <a href="">Contact</a>
-            </div>
-            <svg class="mobile-menu-button fill-current w-6 h-6 md:hidden cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
-            </svg>
-    </div>
-</nav>
-
-<!-- Mobile Menu  -->
-<div style="background-color: #27282C;" class=" fixed h-screen top-0 w-full mobile-menu p-10 hidden md:hidden">
-    <div class=" flex h-full items-center flex-col mb-8 text-gray-400 justify-between">
-        <svg class=" close fill-current w-6 h-6 md:hidden cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-    
-
-    <div class=" text-gray-400 space-x-8 ">
-        <a href="index.html">Work</a>
-        <a href="">Info</a>
-        <a href="">Contact</a>
-    </div>
-    <div>Copyright is a fallacy.</div>
-</div>
-</div>
-
-
-
-<!-- Hero -->
-<section style="background-color: #27282C;" class="text-gray-50 font-light">
-    <div class="max-w-6xl font-light px-6 py-10 md:py-20 md:px-10 mx-auto">
-    <h1 class=" mb-8 lg:text-8xl md:text-6xl text-4xl leading-tight">A modern programming language
-        that makes developers happier.</h1>
-    <div class="md:flex md:space-x-8 mt-10 mb-24">
-        <button class="my-2 bg-indigo-600 md:w-max w-full px-8 hover:bg-indigo-500 py-3 rounded-full">Get started</button>
-        <button class="my-2 px-8 border md:w-max w-full border-gray-600 hover:bg-gray-600 py-3 rounded-full">Why Kotlin</button>
-    </div>
-
-<!-- Services Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 border-t border-l border-gray-700 lg:grid-cols-4 my-8 md:my-24">
-        <div class="border-r border-b border-gray-700 p-8">
-            <div class="mb-8 w-10 h-10 rounded-sm bg-gradient-to-tr from-indigo-600 to-pink-600"></div>
-            <h1 class="text-xl font-normal mb-2">Multiplatform Mobile</h1>
-            <p class="tracking-wide text-xl text-gray-400">The natural way to share code between mobile platforms</p>
-        </div>
-        <div class="border-r border-b border-gray-700 p-8">
-            <div class="mb-8 w-10 h-10 rounded-sm bg-gradient-to-tr from-indigo-600 to-pink-600"></div>
-            <h1 class="text-xl font-normal mb-2">Multiplatform Mobile</h1>
-            <p class="tracking-wide text-xl text-gray-400">The natural way to share code between mobile platforms</p>
-        </div>
-        <div class="border-r border-b border-gray-700 p-8">
-            <div class="mb-8 w-10 h-10 rounded-sm bg-gradient-to-tr from-indigo-600 to-pink-600"></div>
-            <h1 class="text-xl font-normal mb-2">Multiplatform Mobile</h1>
-            <p class="tracking-wide text-xl text-gray-400">The natural way to share code between mobile platforms</p>
-        </div>
-        <div class="border-r border-b border-gray-700 p-8">
-            <div class="mb-8 w-10 h-10 rounded-sm bg-gradient-to-tr from-indigo-600 to-pink-600"></div>
-            <h1 class="text-xl font-normal mb-2">Multiplatform Mobile</h1>
-            <p class="tracking-wide text-xl text-gray-400">The natural way to share code between mobile platforms</p>
+<body class="p-4 md:p-8 bg-black" >
+  <div class="grid grid-cols-1  md:grid-cols-2 ">
+    <div class="w-full row-span-2 bg-white  text-gray-700">
+      <div class="p-12">
+        <h1 class="mb-4 text-2xl font-medium">Hello there,</h1>
+        <p class="mb-24 leading-relaxed tracking-wide">The always with you coffee machine that turns fresh coffee beans into freshly filtered coffee. A bean holder, coffee grinder and filter seamlessly attach using strong magnets and are as portable as you are.</p>
+        <div class="flex space-x-4">
+          <div class="w-10 h-10 rounded-full bg-gray-100"></div>
+          <div class="w-10 h-10 rounded-full bg-gray-100"></div>
+          <div class="w-10 h-10 rounded-full bg-gray-100"></div>
+          <div class="w-10 h-10 rounded-full bg-gray-100"></div>
         </div>
     </div>
+  </div>
 
-</div>
-</section>
-
-
-<!-- Platform -->
-
-<section>
-    <div class="max-w-6xl font-light text-gray-700 px-6 py-8 md:py-16 md:px-10 mx-auto">
-    <h1 class="md:mb-16 mb-8 text-4xl md:text-6xl md:w-3/4">Natural way to share code between mobile platforms</h1>
-    <img src="https://kotlinlang.org/assets/images/index/mobile-platforms.svg" class="md:my-16 my-8"></img>
-    <p class="mb-6 tracking-wide md:text-xl">Write the business logic for iOS and Android apps just once. Easily make existing applications cross-platform.</p>
-    <button class="border hover:border-gray-400 transition ease-in-out  border-gray-300 px-8 py-3 rounded-full">Browse KMM</button>
+    <div class="cta w-full cursor-pointer flex justify-between items-center bg-yellow-500 p-8 md:p-12">
+    <h1 class="text-3xl font-light">Start a project</h1>
+    <svg class="arrow w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+    </svg>
     </div>
-</div>
-</section>
 
-<!-- Community -->
-
-<section>
-    <div class="max-w-6xl font-light text-gray-700 px-6 py-8 md:px-10 mx-auto">
-    <h1 class="md:mb-16 mb-8 text-4xl md:text-6xl">Big, friendly and helpful community</h1>
-    <div class="md:h-96 h-64 bg-gray-100 md:my-16 my-8"></div>
-    <p class="mb-6 tracking-wide md:text-xl">Kotlin has great support and many contributors in its fast-growing global community. Enjoy the benefits of a rich ecosystem with a wide range of community libraries. Help is never far away – consult extensive community resources or ask the Kotlin team directly.</p>
-    <button class="border border-gray-300 px-8 py-3 rounded-full">Join the community</button>
+    <div class="w-full row-span-3 bg-yellow-200">
+      <div class="p-12 mb-24 space-y-4">
+        <h1 class="text-2xl font-medium">CoffeeCollection</h1>
+        <h1 class="text-sm font-normal opacity-60">February 2019 • 4 months</h1>
+        <p class="leading-relaxed tracking-wide">The always with you coffee machine that turns fresh coffee beans into freshly filtered coffee. A bean holder, coffee grinder and filter seamlessly attach using strong magnets and are as portable as you are.</p>
+      </div>
+      <div class="p-12">
+        <button class="btn-default">Visit Site</button>
+      </div>
     </div>
-</div>
-</section>
 
-<!-- Usage Highlight -->
-
-<section>
-    <div class="max-w-6xl font-light text-gray-700 px-6 md:px-10 md:py-24 py-10 mx-auto">
-    <p class="md:mb-16 mb-8 text-4xl md:text-6xl">Kotlin Usage Highlights</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 md:gap-y-16 gap-y-10 mb-10">
-        <div>
-            <h1 class="text-xl mb-2 font-medium">Gradle</h1>
-            <p>Gradle is introducing Kotlin as a language for writing build scripts</p>
-        </div>
-        <div>
-            <h1 class="text-xl mb-2 font-medium">Gradle</h1>
-            <p>Gradle is introducing Kotlin as a language for writing build scripts</p>
-        </div>
-        <div>
-            <h1 class="text-xl mb-2 font-medium">Gradle</h1>
-            <p>Gradle is introducing Kotlin as a language for writing build scripts</p>
-        </div>
-        <div>
-            <h1 class="text-xl mb-2 font-medium">Gradle</h1>
-            <p>Gradle is introducing Kotlin as a language for writing build scripts</p>
-        </div>
-        <div>
-            <h1 class="text-xl mb-2 font-medium">Gradle</h1>
-            <p>Gradle is introducing Kotlin as a language for writing build scripts</p>
-        </div>
-        <div>
-            <h1 class="text-xl mb-2 font-medium">Gradle</h1>
-            <p>Gradle is introducing Kotlin as a language for writing build scripts</p>
-        </div>
+    <div class="w-full row-span-3 bg-blue-200">
+      <div class="p-12 mb-24 space-y-4">
+        <h1 class="text-2xl font-medium">CoffeeCollection</h1>
+        <h1 class="text-sm font-normal opacity-60">February 2019 • 4 months</h1>
+        <p class="leading-relaxed tracking-wide">The always with you coffee machine that turns fresh coffee beans into freshly filtered coffee. A bean holder, coffee grinder and filter seamlessly attach using strong magnets and are as portable as you are.</p>
+      </div>
+      <div class="p-12">
+        <button class="btn-default">Case study</button>
+      </div>
     </div>
-</div>
-</section>
 
-<!-- CTA Section  -->
-<section class="bg-gradient-to-tr text-gray-50 from-yellow-600 via-pink-800 to-red-800 ">
-    <div class="max-w-6xl px-6 md:px-10 md:py-20 py-10 mx-auto">
-    <p class="font-light mb-10 md:mb-20">How about to try?</p>
-    <h1 class="md:text-7xl text-4xl leading-tight font-light mb-10 md:eading-none md:w-3/4">Start using Kotlin today!
-        Build your first app in your favorite IDE </h1>
-    <button class="bg-gray-800 px-8 hover:bg-gray-700 py-3 rounded-full">Get started</button>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-gradient-to-tr text-gray-600 bg-white">
-    <div class="max-w-6xl px-6 space-y-4 md:px-10 md:py-16 py-10 mx-auto">
-        <div class="flex space-x-4 text-gray-700">
-            <div class="cursor-pointer w-12 h-12 rounded-full flex justify-center items-center hover:bg-gray-100">
-                <svg class="w-6 h-6 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Twitter icon</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-            </div>
-            <div class="cursor-pointer w-12 h-12 rounded-full flex justify-center items-center hover:bg-gray-100">
-                <svg class="w-6 h-6 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Twitter icon</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-            </div>
-            <div class="cursor-pointer w-12 h-12 rounded-full flex justify-center items-center hover:bg-gray-100">
-                <svg class="w-6 h-6 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Twitter icon</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-            </div>
-            <div class="cursor-pointer w-12 h-12 rounded-full flex justify-center items-center hover:bg-gray-100">
-                <svg class="w-6 h-6 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Twitter icon</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-            </div>     
-        </div>
-        <p class="font-light">Contributing to Kotlin Releases Press Kit Security Blog Issue Tracker</p>
-        <div class="md:flex md:space-y-0 space-y-4 justify-between">
-        <p class="font-light text-gray-400 text-sm">Kotlin™ is protected under the Kotlin Foundation and licensed under the Apache 2 license.</p>
-        <p class="font-light text-gray-400 text-sm">Supported and developed by JetBrains</p>
-        </div>
+    <div class="w-full row-span-3 bg-green-200">
+      <div class="p-12 mb-24 space-y-4">
+        <h1 class="text-2xl font-medium">CoffeeCollection</h1>
+        <h1 class="text-sm font-normal opacity-60">February 2019 • 4 months</h1>
+        <p class="leading-relaxed tracking-wide">The always with you coffee machine that turns fresh coffee beans into freshly filtered coffee. A bean holder, coffee grinder and filter seamlessly attach using strong magnets and are as portable as you are.</p>
+      </div>
+      <div class="p-12">
+        <button class="btn-default">Case study</button>
+      </div>
     </div>
-</footer>
-<script>
 
-// grab everything we need
-const btn = document.querySelector(".mobile-menu-button");
-const btn1 = document.querySelector(".close");
-const menu = document.querySelector(".mobile-menu");
+    <div class="w-full row-span-4 bg-cover text-white" style="background-image: url(img/noodle.jpg);">
+      <div class="p-12 mb-24 space-y-4 bg-gradient-to-b from-black">
+        <h1 class="text-2xl font-medium">Noodle</h1>
+        <h1 class="text-sm font-normal opacity-60">February 2019 • 4 months</h1>
+        <p class="leading-relaxed tracking-wide">The always with you coffee machine that turns fresh coffee beans into freshly filtered coffee. A bean holder, coffee grinder and filter seamlessly attach using strong magnets and are as portable as you are.</p>
+      </div>
+      <div class="p-12">
+        <button class="px-6 py-3 bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 ease-in-out duration-500">Case study</button>
+      </div>  
+    </div>
 
-// add event listeners
-btn.addEventListener("click", () => {
-  menu.classList.toggle("hidden");
-  document.documentElement.style.overflow = 'hidden';
-});
-
-btn1.addEventListener("click", () => {
-  menu.classList.toggle("hidden");
-  document.documentElement.style.overflow = 'auto';
-});
-
-
-</script>
+    <div class="w-full row-span-3 bg-gray-300 p-8 md:p-12">
+      <h1 class="text-3xl mb-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+      <button class="btn-default">Say hello</button>
+    </div>
+    <div class="w-full bg-gray-200 p-8 md:p-12">
+      <h1>Made with proud in Bali.</h1>
+      <h1 class="text-sm opacity-50 mt-2">Copyright © 2019 Dennis Gecaj. All rights reserved.</h1>
+    </div>
+  </div>
 </body>
 </html>
